@@ -20,11 +20,11 @@ LorDist(
 
 ## Arguments
 
-data.mat: Abundance matrix with data type "matrix", row is feature, column is sample.
+$data.mat$: Abundance matrix with data type "matrix", row is feature, column is sample.
 
-sample_information: Metadata included Sample ID, Subject ID, Time point.
+$sample_information$: Metadata included Sample ID, Subject ID, Time point.
 
-SampleID: Column name of Sample ID in Metadata.
+$SampleID$: Column name of Sample ID in Metadata.
 
 SubjectID: Column name of Subject ID in Metadata.
 
