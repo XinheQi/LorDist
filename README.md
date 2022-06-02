@@ -1,5 +1,8 @@
 # LorDist
+
+## Description
 Calculate the distance of longitudinal microbial data using the method of functional data
+
 ## Usage
 ```
 LorDist(
@@ -14,32 +17,32 @@ LorDist(
   q = 1
 )
 ```
-\arguments{
-\item{data.mat}{Abundance matrix with data type "matrix", row is feature, column is sample.}
 
-\item{sample_information}{Metadata included Sample ID, Subject ID, Time point.}
+## Arguments
 
-\item{SampleID}{Column name of Sample ID in Metadata.}
+data.mat: Abundance matrix with data type "matrix", row is feature, column is sample.
 
-\item{SubjectID}{Column name of Subject ID in Metadata.}
+sample_information: Metadata included Sample ID, Subject ID, Time point.
 
-\item{Timepoint}{Column name of Time point in Metadata.}
+SampleID: Column name of Sample ID in Metadata.
 
-\item{method}{Curve fitting method. The default is "Bspline", can also choose "Fourier".}
+SubjectID: Column name of Subject ID in Metadata.
 
-\item{norder}{an integer specifying the degree of b-splines. The default of 2.}
+Timepoint: Column name of Time point in Metadata.
 
-\item{varlim}{The lowest cumulative variance contribution rate when calculating the weighted principal component distance.The default of 0.8.}
+method: Curve fitting method. The default is "Bspline", can also choose "Fourier".
 
-\item{q}{Parameter when calculating the weighted principal component distance. The default of 1.}
-}
-\value{
+norder: an integer specifying the degree of b-splines. The default of 2.
+
+varlim: The lowest cumulative variance contribution rate when calculating the weighted principal component distance.The default of 0.8.
+
+q: Parameter when calculating the weighted principal component distance. The default of 1.
+
+## Value
 a distance matrix
-}
-\description{
-Calculate the distance of longitudinal microbial data using the method of functional data
-}
-\examples{
+
+## Examples
+```
 data(simdata)
 dist<-LorDist(SimData.mat, SimSample_information, SampleID = 'SampleID',
               SubjectID = "SubjectID", Timepoint = 'Timepoint')
@@ -47,6 +50,5 @@ dist<-LorDist(SimData.mat, SimSample_information, SampleID = 'SampleID',
 data(IBD2538)
 dist<-LorDist(IBDdata.mat, IBDsample_information, SampleID = 'SampleID',
               SubjectID = "SubjectID", Timepoint = 'Timepoint')
+```
 
-
-}
