@@ -1,8 +1,7 @@
 # LorDist
-\name{LorDist}
-\alias{LorDist}
-\title{Calculate the distance of longitudinal microbial data using the method of functional data}
-\usage{
+Calculate the distance of longitudinal microbial data using the method of functional data
+## Usage
+```
 LorDist(
   data.mat,
   sample_information,
@@ -14,7 +13,7 @@ LorDist(
   varlim = 0.8,
   q = 1
 )
-}
+```
 \arguments{
 \item{data.mat}{Abundance matrix with data type "matrix", row is feature, column is sample.}
 
