@@ -20,23 +20,23 @@ LorDist(
 
 ## Arguments
 
-$data.mat$: Abundance matrix with data type "matrix", row is feature, column is sample.
+__data.mat__: Abundance matrix with data type "matrix", row is feature, column is sample.
 
-$sample_information$: Metadata included Sample ID, Subject ID, Time point.
+__sample_information__: Metadata included Sample ID, Subject ID, Time point.
 
-$SampleID$: Column name of Sample ID in Metadata.
+__SampleID__: Column name of Sample ID in Metadata.
 
-SubjectID: Column name of Subject ID in Metadata.
+__SubjectID__: Column name of Subject ID in Metadata.
 
-Timepoint: Column name of Time point in Metadata.
+__Timepoint__: Column name of Time point in Metadata.
 
-method: Curve fitting method. The default is "Bspline", can also choose "Fourier".
+__method__: Curve fitting method. The default is "Bspline", can also choose "Fourier".
 
-norder: an integer specifying the degree of b-splines. The default of 2.
+__norder__: an integer specifying the degree of b-splines. The default of 2.
 
-varlim: The lowest cumulative variance contribution rate when calculating the weighted principal component distance.The default of 0.8.
+__varlim__: The lowest cumulative variance contribution rate when calculating the weighted principal component distance.The default of 0.8.
 
-q: Parameter when calculating the weighted principal component distance. The default of 1.
+__q__: Parameter when calculating the weighted principal component distance. The default of 1.
 
 ## Value
 a distance matrix
